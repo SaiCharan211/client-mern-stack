@@ -39,7 +39,7 @@ function ForgetPassword() {
       return;
     }
 
-    Axios.post("http://localhost:3210/verify-otp", {
+    Axios.post(`${baseUrl}verify-otp`, {
       email,
       otp,
       newPassword

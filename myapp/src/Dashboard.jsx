@@ -10,9 +10,9 @@ function Dashboard() {
         axios.get(`${baseUrl}verify`)
         .then(res=>{
             if(res.data.status){
-
+              navigate('/home')
             }else{
-                navigate('/home')
+                
             }
         })
     },[])
